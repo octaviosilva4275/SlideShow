@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>SlideShow</title>
+  </head>
+  <body>
+    <!-- Controle das imagens -->
+    <div class="container-galeria">
+      <!-- Controle de cada item da galeria -->
+      <div class="slides">
+        <!-- Botões que o usuário irá interagir com a galeria por padrão o primeiro slide será carregado(checked) -->
+        <input class="input" type="radio" name="slide" id="slide1" checked />
+        <input class="input" type="radio" name="slide" id="slide2" />
+        <input class="input" type="radio" name="slide" id="slide3" />
+        <input class="input" type="radio" name="slide" id="slide4" />
+        <input class="input" type="radio" name="slide" id="slide5" />
+
+        <div class="slide pos1">
+          <img src="/img/1.jpg" alt="Deck com um homem observando o por sol" />
+        </div>
+
+        <div class="slide">
+          <img src="img/2.jpg" alt="Árvore com por do sol" />
+        </div>
+        <div class="slide">
+          <img src="img/3.jpg" alt="Casinha em um deck" />
+        </div>
+        <div class="slide">
+          <img src="img/4.jpg" alt="Árvore torta no meio do lago" />
+        </div>
+        <div class="slide">
+          <img src="img/5.jpg" alt="Paisagem igual o filme da Moana" />
+        </div>
+      </div>
+    </div>
+
+    <div class="navegacao">
+      <!-- Controle de navegação do usuário 
+        Cada slide é identificado pelo (for) -->
+      <label class="b-navegacao" for="slide1"></label>
+      <label class="b-navegacao" for="slide2"></label>
+      <label class="b-navegacao" for="slide3"></label>
+      <label class="b-navegacao" for="slide4"></label>
+      <label class="b-navegacao" for="slide5"></label>
+    </div>
+
+    <!-- Chamar o arquivo javascript -->
+    <script src="script.js"></script>
+  </body>
+</html>
